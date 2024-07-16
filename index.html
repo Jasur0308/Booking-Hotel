@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="w-full h-screen bg-gray-300">
+    <div class="hotel mx-auto mt-[50px] rounded-2xl max-w-[1200px] py-[50px]">
+        <form id="hotelForm" class="flex justify-between flex-col mx-auto gap-[10px] mt-[10px] max-w-[600px] bg-white px-[40px] rounded-lg py-[30px]">
+            <h1 class="text-[32px] font-bold text-center">Registration</h1>
+            <input type="text" placeholder="Name" id="formInput" name="name" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <input type="text" placeholder="Surname" id="formInput" name="surname" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <input type="number" placeholder="Phone Number" id="formInput" name="phone" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <input type="email" placeholder="Email" id="formInput" name="email" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <input type="number" placeholder="Room №" id="formInput" name="room" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <strong>Arrival Date</strong>
+            <input type="datetime-local" id="formInputs" name="arrivalDate" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <strong>Departure Date</strong>
+            <input type="datetime-local" id="formInputs" name="departureDate" class="border-[1px] border-gray-400 rounded-lg p-[6px] indent-2">
+            <button type="submit" class="rounded-lg bg-green-500 py-[8px] text-white">Add</button>
+        </form>
+
+        <div class="max-w-[1200px] bg-white mt-[50px] w-full mx-auto p-[50px] rounded-lg" id="resultForm">
+            <h3>Residents</h3>
+        </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
